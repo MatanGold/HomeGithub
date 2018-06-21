@@ -28,7 +28,7 @@ class HelloViewController: UIViewController {
 
         updateUI(inProcess: true, message: "Please wait while we're getting your user")
         
-        APIManager.shared.getUser(loginName: "ofirBlox", success: {
+        APIManager.shared.getUser(loginName: "MatanGold", success: {
             self.updateUI(inProcess: false, message: "Done!")
             DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
                 self.performSegue(withIdentifier: "toList", sender: nil)

@@ -16,7 +16,9 @@ class APIManager {
         setup()
     }
     
-    private func setup() { }
+    private func setup() {
+        decoder.dateDecodingStrategy = .iso8601
+    }
     
     private var decoder = JSONDecoder()
     

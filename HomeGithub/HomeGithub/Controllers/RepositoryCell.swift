@@ -35,7 +35,7 @@ class RepositoryCell: UITableViewCell {
         lblName.text = repo.name
         imgIsPrivate.image = repo.isPrivate ? #imageLiteral(resourceName: "Icon-Private") : #imageLiteral(resourceName: "Icon-Public")
         lblHtmlUrl.text = repo.htmlUrl.absoluteString
-        //      lblLastUpdated.text = repo.updatedAt.description
+        lblLastUpdated.text = repo.updatedAt.description
     }
     
     //MARK: - Private Methods

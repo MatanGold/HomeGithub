@@ -10,17 +10,17 @@ import Foundation
 
 struct Repository: Codable {
     
-//    var id: String
+    var id: Int
     var name: String
     var isPrivate: Bool
     var htmlUrl: URL
-//    var updatedAt: Date
+    var updatedAt: Date
     
     enum CodingKeys: String, CodingKey {
-//        case id
+        case id
         case name
         case isPrivate = "private"
         case htmlUrl = "html_url"
-//        case updatedAt = "updated_at"
+        case updatedAt = "updated_at"
     }
 }
