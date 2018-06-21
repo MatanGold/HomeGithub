@@ -8,8 +8,8 @@
 
 import UIKit
 
-
 let IDENTIFIER_REPOSITORY_CELL = "RepositoryCell"
+
 class RepositoryCell: UITableViewCell {
     
     //MARK: - Outlets
@@ -19,14 +19,9 @@ class RepositoryCell: UITableViewCell {
     @IBOutlet weak var lblLastUpdated: UILabel!
     
     
-    //MARK: - Properties
-    
-    
-    
     //MARK: - Life-cycle
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     
     
@@ -35,8 +30,6 @@ class RepositoryCell: UITableViewCell {
         lblName.text = repo.name
         imgIsPrivate.image = repo.isPrivate ? #imageLiteral(resourceName: "Icon-Private") : #imageLiteral(resourceName: "Icon-Public")
         lblHtmlUrl.text = repo.htmlUrl.absoluteString
-        lblLastUpdated.text = repo.updatedAt.description
+        lblLastUpdated.text = "Last update: " + DataManager.shared.dateFormatter.string(from: repo.updatedAt)
     }
-    
-    //MARK: - Private Methods
 }

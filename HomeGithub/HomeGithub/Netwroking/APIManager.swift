@@ -10,6 +10,10 @@ import Foundation
 
 class APIManager {
     
+    //MARK: - Properties
+    private var decoder = JSONDecoder()
+
+    
     //MARK: - Singleton & Init
     static let shared = APIManager()
     private init() {
@@ -20,7 +24,6 @@ class APIManager {
         decoder.dateDecodingStrategy = .iso8601
     }
     
-    private var decoder = JSONDecoder()
     
     //MARK: - User server calls
     /////////////////////////////////////////

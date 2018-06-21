@@ -72,16 +72,16 @@
 		CA1D5DC220DB9F0C00EC3F1F /* HomeGithub */ = {
 			isa = PBXGroup;
 			children = (
-				CA1D5DDF20DBA33C00EC3F1F /* Netwroking */,
+				CA1D5DCF20DB9F0D00EC3F1F /* Info.plist */,
+				CA1D5DC320DB9F0C00EC3F1F /* AppDelegate.swift */,
+				CA1D5DCA20DB9F0D00EC3F1F /* Assets.xcassets */,
+				CA1D5DD520DBA01000EC3F1F /* Controllers */,
+				CA1D5DCC20DB9F0D00EC3F1F /* LaunchScreen.storyboard */,
+				CA1D5DC720DB9F0C00EC3F1F /* Main.storyboard */,
 				CA1D5DDE20DBA33000EC3F1F /* Managers */,
 				CA1D5DDB20DBA08100EC3F1F /* Models */,
+				CA1D5DDF20DBA33C00EC3F1F /* Netwroking */,
 				CA1D5DD920DBA06900EC3F1F /* Utils */,
-				CA1D5DD520DBA01000EC3F1F /* Controllers */,
-				CA1D5DC320DB9F0C00EC3F1F /* AppDelegate.swift */,
-				CA1D5DC720DB9F0C00EC3F1F /* Main.storyboard */,
-				CA1D5DCA20DB9F0D00EC3F1F /* Assets.xcassets */,
-				CA1D5DCC20DB9F0D00EC3F1F /* LaunchScreen.storyboard */,
-				CA1D5DCF20DB9F0D00EC3F1F /* Info.plist */,
 			);
 			path = HomeGithub;
 			sourceTree = "<group>";

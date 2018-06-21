@@ -10,16 +10,21 @@ import Foundation
 
 class DataManager {
     
+    //MARK: - Properties
+    var currentUser: User?
+    let dateFormatter = DateFormatter()
+
+    
     //MARK: - Singleton & Init
     static let shared = DataManager()
     private init() {
         setup()
     }
     
-    private func setup() { }
-    
-    //MARK: - Properties
-    var currentUser: User?
+    private func setup() {
+        dateFormatter.dateFormat = "dd.MM.yyyy HH:mm:ss"
+        dateFormatter.locale = Locale.current
+    }
 }
 
 
